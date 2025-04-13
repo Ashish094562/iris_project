@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: black;
+            background-image: url('https://images.unsplash.com/photo-1501526029524-a8ea952b15be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+
+        input {
+
+            border-radius: 5px;
+
+        }
+        h1{
+            color: white;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        .act {
+            margin-top: 10%;
+            margin-left: 10%;
+            margin-right: 60%;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 5px 5px grey;
+        }
+
+        .sl {
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .sw {
+            color: white;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .pl {
+            color: white;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .pw {
+            color: white;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .cal {
+            color: white;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .sub {
+            color: white;
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 90px;
+        }
+        .res{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iris Machine Learning Model Prediction</h1>
+    <form action="/predict" method="POST" class="act">
+        <div class="all_attributes">
+            <div class="sl">Sepal Length : <input type="'text" name="sepal_length"></div>
+            <div class="sw">Sepal Width : <input type="'text" name="sepal_width"></div>
+            <div class="pl">Petal Length : <input type="'text" name="petal_length"></div>
+            <div class="pw">Petal Width : <input type="'text" name="petal_width"></div>
+
+            <div class="cal">class : <span class="res">{{result}}</span></div>
+            <div class="sub"><input type="submit" value="Predict"></div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>
